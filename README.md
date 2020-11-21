@@ -1,5 +1,9 @@
 # WakeonLan Installationsanleitung für Linux mit Webinterface
 
+Starten und Herunterfahren aus der Fehrne. 
+
+Gestartet wird mit einem Pythonscript und heruntergefahren über eine SSH Verbindung.
+
 Benötigete Daten:
 
 Mac und IP Adresse des zu steuernden Gerätes,
