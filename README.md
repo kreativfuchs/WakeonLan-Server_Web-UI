@@ -15,19 +15,19 @@ $ apt-get update && apt-get upgrade -y
 
 
 
-1. Erster Schritt, Installation von apache2 und php
+**1. Erster Schritt, Installation von apache2 und php**
 
 $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
 
 
 
-2. lösche im Verzeichnis /var/www/html/ die index.html
+**2. lösche im Verzeichnis /var/www/html/ die index.html**
 
 $ rm /var/www/html/index.html
 
 
 
-3. gehe zu /var/www/ und lade herunter
+**3. gehe zu /var/www/ und lade herunter**
 
 $ cd /var/www/html/ && git clone https://github.com/kreativfuchs/wakeonlan_php.git && mv /var/www/html/wakeonlan_php/* /var/www/html/ 
 § apt install python
@@ -36,7 +36,7 @@ $ python wake.py
 
 
 
-4. Bearbeite server.php
+**4. Bearbeite server.php**
 
 $ nano server.php
 
@@ -44,7 +44,7 @@ entferne „MAC“ und setze die Mac adresse deines zu Starten/Shutdown Geräts 
 
 
 
-5. Bearbeite shutdown.sh
+**5. Bearbeite shutdown.sh**
 
 $ nano shutdown.sh
 
@@ -52,16 +52,14 @@ $ nano shutdown.sh
 
 
 
-6. shutdown.sh in Sudouser eunfügen
+**6. shutdown.sh in Sudouser eunfügen**
 
 $ nano /etc/sudoers
 
 füge am ende hinzu:
 $ ALL ALL=NOPASSWD: /var/www/shutdown.sh
 
-7. SSH Key erstellen
-
-
+**7. SSH Key erstellen**
 
 $ ssh-keygen -t rsa -b 4096
 
