@@ -69,6 +69,8 @@ $ ALL ALL=NOPASSWD: /var/www/shutdown.sh
 $ ssh-keygen -t rsa -b 4096
 ```
 bei Passwordabfrage frei lassen und Enter drücken
+
+**8. SSH Key auf Gerät übertragen**
 ```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@your_server
 ```
