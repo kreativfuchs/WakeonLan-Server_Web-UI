@@ -16,9 +16,9 @@ $ apt-get update && apt-get upgrade -y
 
 
 **1. Erster Schritt, Installation von apache2 und php**
-
+```
 $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
-
+```
 
 
 **2. lösche im Verzeichnis /var/www/html/ die index.html**
