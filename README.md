@@ -25,7 +25,7 @@ $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
 $ rm /var/www/html/index.html
 ```
 
-**3. gehe zu /var/www/ und lade herunter**
+**3. gehe zu /var/www/ und lade und lade die Git herunter**
 ```
 $ cd /var/www/html/ && git clone https://github.com/kreativfuchs/wakeonlan_php.git && mv /var/www/html/wakeonlan_php/* /var/www/html/ 
 ```
