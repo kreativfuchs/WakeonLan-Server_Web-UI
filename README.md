@@ -1,9 +1,10 @@
-# WakeonLan Anleitung
+# WakeonLan Installation Anleitung für Linux mit Webinterface
 
-benötigete Daten:
+Benötigete Daten:
 
 Mac und IP Adresse des zu steuernden Gerätes,
-root Zugang auf WakeonLan-Server und Zielgerät,
+root Zugang auf WakeonLan-Server und Zielgerät
+(auf dem Zielgerät muss Linux laufen)
 
 (als WakeonLan-Server empfehle ich einen RaspberryPi)
 
@@ -17,7 +18,7 @@ $ apt-get update && apt-get upgrade -y
 ```
 $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
 ```
-
+(Möglicherweise muss die php- Version angepasst werden)
 **2. lösche im Verzeichnis /var/www/html/ die index.html**
 ```
 $ rm /var/www/html/index.html
@@ -27,7 +28,7 @@ $ rm /var/www/html/index.html
 ```
 $ cd /var/www/html/ && git clone https://github.com/kreativfuchs/wakeonlan_php.git && mv /var/www/html/wakeonlan_php/* /var/www/html/ 
 ```
-Installation von pytthon
+Installation von Python
 ```
 § apt install python
 ```
