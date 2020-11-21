@@ -1,4 +1,4 @@
-# WakeonLan Installation Anleitung für Linux mit Webinterface
+# WakeonLan Installationsanleitung für Linux mit Webinterface
 
 Benötigete Daten:
 
