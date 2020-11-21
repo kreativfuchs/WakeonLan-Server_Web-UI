@@ -1,5 +1,4 @@
 # wakeonlan_php
-WakeonLan Server on RaspberryPi and Other
 WakeonLan Anleitung
 
 benötigete Daten:
@@ -10,38 +9,47 @@ root Zugang auf WakeonLan-Server und Zielgerät,
 (als WakeonLan-Server empfehle ich einen RaspberryPi)
 
 
+Update und Upgrade
 
-1. Erster Schritt, Installation von apache2 und php
+$ apt-get update && apt-get upgrade -y
+
+
+
+##1. Erster Schritt, Installation von apache2 und php
 
 $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
 
-2. gehe zu /var/www/ und lade herunter
+##2. lösche im Verzeichnis /var/www/html/ die index.html
 
-$ cd /var/www/
-$ git
-$ sudo chmod +x wake.py
+$ rm /var/www/html/index.html
+
+##3. gehe zu /var/www/ und lade herunter
+
+$ cd /var/www/html/ && git clone https://github.com/kreativfuchs/wakeonlan_php.git && mv /var/www/html/wakeonlan_php/* /var/www/html/ 
+§ apt install python
+$ chmod +x wake.py
 $ python wake.py
 
-3. Bearbeite server.php
+##4. Bearbeite server.php
 
 $ nano server.php
 
 entferne „MAC“ und setze die Mac adresse deines zu Starten/Shutdown Geräts ein.
 
-4. Bearbeite shutdown.sh
+##5. Bearbeite shutdown.sh
 
 $ nano shutdown.sh
 
 ändere die SSH Verbindung zu der deines Geräts
 
-5. shutdown.sh in Sudouser eunfügen
+##6. shutdown.sh in Sudouser eunfügen
 
 $ nano /etc/sudoers
 
 füge am ende hinzu:
 $ ALL ALL=NOPASSWD: /var/www/shutdown.sh
 
-6. SSH Key erstellen
+##7. SSH Key erstellen
 
 $ ssh-keygen -t rsa -b 4096
 
