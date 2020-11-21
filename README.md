@@ -22,17 +22,24 @@ $ sudo apt-get install apache2 php7.2 libapache2-mod-php7.2
 
 
 **2. lösche im Verzeichnis /var/www/html/ die index.html**
-
+```
 $ rm /var/www/html/index.html
-
+```
 
 
 **3. gehe zu /var/www/ und lade herunter**
-
+```
 $ cd /var/www/html/ && git clone https://github.com/kreativfuchs/wakeonlan_php.git && mv /var/www/html/wakeonlan_php/* /var/www/html/ 
+```
+```
 § apt install python
+```
+```
 $ chmod +x wake.py
+```
+```
 $ python wake.py
+```
 
 
 
