@@ -50,7 +50,7 @@ entferne „MAC“ und setze die Mac adresse deines zu Starten/Shutdown Geräts 
 ```
 $ nano shutdown.sh
 ```
-ändere die SSH Verbindung zu der deines Geräts
+ändere die SSH Verbindung zu deinem Gerät
 
 **6. shutdown.sh in Sudouser eunfügen**
 ```
