@@ -44,32 +44,34 @@ $ python wake.py
 
 
 **4. Bearbeite server.php**
-
+```
 $ nano server.php
-
+```
 entferne „MAC“ und setze die Mac adresse deines zu Starten/Shutdown Geräts ein.
 
 
 
 **5. Bearbeite shutdown.sh**
-
+```
 $ nano shutdown.sh
-
+```
 ändere die SSH Verbindung zu der deines Geräts
 
 
 
 **6. shutdown.sh in Sudouser eunfügen**
-
+```
 $ nano /etc/sudoers
-
+```
 füge am ende hinzu:
+```
 $ ALL ALL=NOPASSWD: /var/www/shutdown.sh
-
+```
 **7. SSH Key erstellen**
-
+```
 $ ssh-keygen -t rsa -b 4096
-
+```
 bei Passwordabfrage frei lassen und Enter drücken
-
+```
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub root@your_server
+```
