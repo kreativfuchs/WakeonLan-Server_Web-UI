@@ -1,5 +1,5 @@
 # wakeonlan_php
-WakeonLan Anleitung
+## WakeonLan Anleitung
 
 benötigete Daten:
 
