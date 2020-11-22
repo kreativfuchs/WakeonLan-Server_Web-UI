@@ -62,7 +62,7 @@ $ nano /etc/sudoers
 ```
 füge am ende hinzu:
 ```
-$ ALL ALL=NOPASSWD: /var/www/shutdown.sh
+$ ALL ALL=NOPASSWD: /var/www/html/shutdown.sh
 ```
 **7. SSH Key erstellen**
 ```
