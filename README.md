@@ -1,5 +1,6 @@
 **Installation Guide:**<br>
-!!! tested on Ubuntu 20.04 !!!
+!!! tested on Ubuntu 20.04 !!!<br><br>
+you must have root access
 
 <br>Step: 1. Update and Upgrade.
 
