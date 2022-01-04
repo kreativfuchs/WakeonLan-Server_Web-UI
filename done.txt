@@ -1,0 +1,30 @@
+Your WakeonLan installation is Done!
+
+Edit:
+
+
+Change the MACadress of the server to be controlled.
+
+$ nano /var/www/html/server.sh
+
+delete "MAC" and set in your MACadress.
+
+----------
+
+Change "localhost" to your server.
+
+$ nano /var/www/html/shutdown.sh
+
+----------
+
+last step:
+
+copy your SSH-Key to the server:
+
+$ ssh-copy-id -i ~/.ssh/id_rsa.pub root@your_server
+
+/*--------------------*/
+
+Your Web UI can now be reached under your device IP
+
+http://DEVICE_IP:80
