@@ -1,4 +1,5 @@
-**Installation Guide:**
+**Installation Guide:**<br>
+!!! tested on Ubuntu 20.04 !!!
 
 <br>Step: 1. Update and Upgrade.
 
