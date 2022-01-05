@@ -16,13 +16,19 @@ $ apt-get update && apt-get upgrade -y
 $ apt-get install git -y
 ```
 
-<br>Step: 3. Go to "wakeonlan_php" folder.
+<br>Step: 3. Clone Github repository.
+
+```
+$ git clone https://github.com/kreativfuchs/wakeonlan_php.git
+```
+
+<br>Step: 4. Go to "wakeonlan_php" folder.
 
 ```
 $ cd wakeonlan_php
 ```
 
-<br>Step: 4. Run install script.
+<br>Step: 5. Run install script.
 
 ```
 $ chmod +x
