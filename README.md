@@ -2,7 +2,6 @@
 !!! tested on Ubuntu 20.04 LTS !!!<br><br>
 you must have root access
 
-EXAMPLE Video https://youtu.be/ffBEX60PWCk
 
 <br>Step: 1. Update and Upgrade.
 
