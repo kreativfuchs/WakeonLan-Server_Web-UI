@@ -30,7 +30,7 @@ $ cd wakeonlan_php
 <br>Step: 5. Run install script.
 
 ```
-$ chmod +x
+$ chmod +x install.sh
 $ bash install.sh
 ```
 
