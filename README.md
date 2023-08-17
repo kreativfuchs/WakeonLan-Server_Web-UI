@@ -39,7 +39,7 @@ $ bash install.sh
 <br>Change the MACadress of the server to be controlled.
 
 ```
-$ nano /var/www/html/server.sh
+$ nano /var/www/html/server.php
 ```
 delete "MAC" and set in your MACadress.
 
